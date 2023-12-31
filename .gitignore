@@ -32,3 +32,6 @@
 *.app
 /env.bat
 /x64/Debug
+/keylogger.vcxproj
+/keylogger.vcxproj.filters
+/.vs/keylogger
